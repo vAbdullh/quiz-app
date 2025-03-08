@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from "react";
 import { QuizQuestion, quizQuestions } from "../data/quizQuestions";
 
@@ -24,7 +23,18 @@ interface QuizContextType {
 const QuizContext = createContext<QuizContextType | undefined>(undefined);
 
 export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [questions] = useState<QuizQuestion[]>(quizQuestions);
+  // Fisher-Yates shuffle function
+  const shuffleArray = (array: QuizQuestion[]): QuizQuestion[] => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]]; // Swap elements
+    }
+    return shuffledArray;
+  };
+
+  // State initialization
+  const [questions] = useState<QuizQuestion[]>(shuffleArray(quizQuestions));
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
