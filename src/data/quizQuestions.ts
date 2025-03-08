@@ -1,188 +1,249 @@
 export interface QuizQuestion {
-id: number;
-question: string;
-options: string[];
-correctAnswer: string;
+  id: number;
+  question: string;
+  options: string[];
+  correctAnswer: string;
 }
+
 export const quizQuestions: QuizQuestion[] = [
-{
-id: 1,
-question: "What is the Internet described as in the context of networking?",
-options: ["A single centralized network", "A network of networks", "Only wireless access points", "Only data centers"],
-correctAnswer: "A network of networks"
-},
-{
-id: 2,
-question: "What is a protocol in computer networking?",
-options: ["A physical connection between devices", "A set of rules governing communication between devices", "A type of network cable", "A security encryption standard"],
-correctAnswer: "A set of rules governing communication between devices"
-},
-{
-id: 3,
-question: "Which of the following is considered part of the network edge?",
-options: ["Routers", "Servers in data centers", "Tier-1 ISPs", "Content provider networks"],
-correctAnswer: "Servers in data centers"
-},
-{
-id: 4,
-question: "What is a key advantage of packet switching over circuit switching?",
-options: ["Guaranteed bandwidth", "No resource sharing", "Dynamic resource allocation", "Simpler implementation"],
-correctAnswer: "Dynamic resource allocation"
-},
-{
-id: 5,
-question: "Which metric measures the time a packet takes to travel from source to destination?",
-options: ["Throughput", "Delay", "Loss", "Bandwidth"],
-correctAnswer: "Delay"
-},
-{
-id: 6,
-question: "What is a primary security concern in computer networks?",
-options: ["Packet interception", "Hardware failure", "Software bugs", "User training"],
-correctAnswer: "Packet interception"
-},
-{
-id: 7,
-question: "Which layer is responsible for routing datagrams from source to destination?",
-options: ["Application Layer", "Transport Layer", "Network Layer", "Link Layer"],
-correctAnswer: "Network Layer"
-},
-{
-id: 8,
-question: "When was the TCP/IP protocol suite deployed?",
-options: ["1972", "1980", "1983", "1990"],
-correctAnswer: "1983"
-},
-{
-id: 9,
-question: "What does HTTP stand for?",
-options: ["HyperText Transfer Protocol", "High Tech Transmission Protocol", "Hybrid Text Transfer Process", "Host-to-Host Transport Protocol"],
-correctAnswer: "HyperText Transfer Protocol"
-},
-{
-id: 10,
-question: "Which layer in the Internet protocol stack deals with individual bits transmission?",
-options: ["Physical Layer", "Link Layer", "Network Layer", "Transport Layer"],
-correctAnswer: "Physical Layer"
-},
-{
-id: 11,
-question: "What is the main difference between TCP and UDP?",
-options: ["TCP is connection-oriented, UDP is connectionless", "TCP is faster than UDP", "UDP provides reliability, TCP does not", "TCP is used for video streaming"],
-correctAnswer: "TCP is connection-oriented, UDP is connectionless"
-},
-{
-id: 12,
-question: "Which of the following is a wireless access technology?",
-options: ["DSL", "Cable Modem", "WiFi", "Ethernet"],
-correctAnswer: "WiFi"
-},
-{
-id: 13,
-question: "What is the purpose of a router in a network?",
-options: ["To connect multiple computers in a LAN", "To forward packets between different networks", "To provide wireless connectivity", "To encrypt data transmissions"],
-correctAnswer: "To forward packets between different networks"
-},
-{
-id: 14,
-question: "Which protocol is used for email transmission?",
-options: ["HTTP", "SMTP", "FTP", "DNS"],
-correctAnswer: "SMTP"
-},
-{
-id: 15,
-question: "What does DNS stand for?",
-options: ["Digital Network System", "Domain Name System", "Data Network Service", "Distributed Network Security"],
-correctAnswer: "Domain Name System"
-},
-{
-id: 16,
-question: "Which of the following is a circuit-switched network?",
-options: ["The Internet", "Traditional telephone network", "WiFi network", "4G/5G cellular network"],
-correctAnswer: "Traditional telephone network"
-},
-{
-id: 17,
-question: "What is the main advantage of circuit switching?",
-options: ["Guaranteed bandwidth", "No setup required", "More efficient for bursty traffic", "Simpler implementation"],
-correctAnswer: "Guaranteed bandwidth"
-},
-{
-id: 18,
-question: "Which layer in the OSI model handles encryption?",
-options: ["Presentation Layer", "Session Layer", "Transport Layer", "Application Layer"],
-correctAnswer: "Presentation Layer"
-},
-{
-id: 19,
-question: "What is a MAC address?",
-options: ["A network layer address", "A transport layer identifier", "A link layer hardware address", "A physical layer signal identifier"],
-correctAnswer: "A link layer hardware address"
-},
-{
-id: 20,
-question: "Which protocol operates at the link layer?",
-options: ["IP", "TCP", "Ethernet", "HTTP"],
-correctAnswer: "Ethernet"
-},
-{
-id: 21,
-question: "What is the primary function of the transport layer?",
-options: ["Routing packets", "Transmitting bits over physical media", "End-to-end data transfer", "Interpreting data meaning"],
-correctAnswer: "End-to-end data transfer"
-},
-{
-id: 22,
-question: "Which of the following is a network layer protocol?",
-options: ["HTTP", "TCP", "IP", "Ethernet"],
-correctAnswer: "IP"
-},
-{
-id: 23,
-question: "What is the main disadvantage of packet switching?",
-options: ["No resource guarantees", "Complex implementation", "Higher latency", "Requires connection setup"],
-correctAnswer: "No resource guarantees"
-},
-{
-id: 24,
-question: "Which protocol is used for file transfer?",
-options: ["HTTP", "SMTP", "FTP", "DNS"],
-correctAnswer: "FTP"
-},
-{
-id: 25,
-question: "What does URL stand for?",
-options: ["Uniform Resource Locator", "Universal Resource Link", "Unified Routing Label", "Ubiquitous Resource Locator"],
-correctAnswer: "Uniform Resource Locator"
-},
-{
-id: 26,
-question: "Which layer is responsible for establishing, maintaining, and terminating connections?",
-options: ["Session Layer", "Transport Layer", "Network Layer", "Application Layer"],
-correctAnswer: "Session Layer"
-},
-{
-id: 27,
-question: "What is the purpose of a firewall?",
-options: ["To filter incoming and outgoing network traffic", "To encrypt data", "To store network packets", "To connect different network segments"],
-correctAnswer: "To filter incoming and outgoing network traffic"
-},
-{
-id: 28,
-question: "Which protocol is used for domain name resolution?",
-options: ["HTTP", "DNS", "DHCP", "FTP"],
-correctAnswer: "DNS"
-},
-{
-id: 29,
-question: "What is the main difference between a hub and a switch?",
-options: ["A hub operates at layer 1, a switch at layer 2", "A hub is wireless, a switch is wired", "A switch is faster than a hub", "A hub can route between networks"],
-correctAnswer: "A hub operates at layer 1, a switch at layer 2"
-},
-{
-id: 30,
-question: "Which protocol is used for automatic IP address assignment?",
-options: ["DHCP", "DNS", "HTTP", "FTP"],
-correctAnswer: "DHCP"
-}
+  {
+    id: 1,
+    question: "Which transport layer protocol provides reliable, connection-oriented service?",
+    options: ["UDP", "TCP", "HTTP", "DNS"],
+    correctAnswer: "TCP"
+  },
+  {
+    id: 2,
+    question: "What is the primary function of the Application Layer in the TCP/IP model?",
+    options: ["Packet delivery", "End-to-end communication", "Physical transmission", "Error correction"],
+    correctAnswer: "End-to-end communication"
+  },
+  {
+    id: 3,
+    question: "Which protocol is used for email transmission between mail servers?",
+    options: ["IMAP", "POP3", "SMTP", "HTTP"],
+    correctAnswer: "SMTP"
+  },
+  {
+    id: 4,
+    question: "What does DNS stand for?",
+    options: ["Dynamic Network Service", "Domain Name System", "Data Network Security", "Digital Network Service"],
+    correctAnswer: "Domain Name System"
+  },
+  {
+    id: 5,
+    question: "Which protocol is connectionless and provides no guarantees about delivery?",
+    options: ["TCP", "UDP", "HTTP", "FTP"],
+    correctAnswer: "UDP"
+  },
+  {
+    id: 6,
+    question: "What is the default port number for HTTP?",
+    options: ["21", "25", "80", "443"],
+    correctAnswer: "80"
+  },
+  {
+    id: 7,
+    question: "Which protocol is used to securely transfer web traffic?",
+    options: ["TLS", "UDP", "FTP", "SMTP"],
+    correctAnswer: "TLS"
+  },
+  {
+    id: 8,
+    question: "What is the purpose of a socket in networking?",
+    options: ["To physically connect devices", "To provide encryption", "To serve as an endpoint for communication", "To manage DNS records"],
+    correctAnswer: "To serve as an endpoint for communication"
+  },
+  {
+    id: 9,
+    question: "Which HTTP method is used to retrieve data from a server?",
+    options: ["POST", "PUT", "GET", "DELETE"],
+    correctAnswer: "GET"
+  },
+  {
+    id: 10,
+    question: "What is the main advantage of persistent HTTP connections?",
+    options: ["Reduced bandwidth usage", "Faster page loading", "Increased security", "Better error handling"],
+    correctAnswer: "Faster page loading"
+  },
+  {
+    id: 11,
+    question: "Which protocol is used to retrieve emails from a mail server?",
+    options: ["SMTP", "IMAP", "POP3", "HTTP"],
+    correctAnswer: "IMAP"
+  },
+  {
+    id: 12,
+    question: "What is the primary security protocol used to encrypt HTTP traffic?",
+    options: ["TLS", "SSL", "HTTPS", "VPN"],
+    correctAnswer: "TLS"
+  },
+  {
+    id: 13,
+    question: "Which DNS record type maps a hostname to an IP address?",
+    options: ["CNAME", "MX", "A", "NS"],
+    correctAnswer: "A"
+  },
+  {
+    id: 14,
+    question: "What is the main difference between HTTP/1.1 and HTTP/2?",
+    options: ["HTTP/2 is connectionless", "HTTP/2 multiplexes requests", "HTTP/2 uses UDP", "HTTP/2 doesn't use TCP"],
+    correctAnswer: "HTTP/2 multiplexes requests"
+  },
+  {
+    id: 15,
+    question: "Which protocol is used for file transfers?",
+    options: ["HTTP", "FTP", "SMTP", "DNS"],
+    correctAnswer: "FTP"
+  },
+  {
+    id: 16,
+    question: "What is the purpose of cookies in HTTP?",
+    options: ["To maintain state between requests", "To encrypt traffic", "To validate server certificates", "To compress data"],
+    correctAnswer: "To maintain state between requests"
+  },
+  {
+    id: 17,
+    question: "Which protocol operates at the transport layer and provides reliability?",
+    options: ["UDP", "TCP", "HTTP", "DNS"],
+    correctAnswer: "TCP"
+  },
+  {
+    id: 18,
+    question: "What is the main advantage of using UDP over TCP?",
+    options: ["Lower latency for real-time applications", "Higher reliability", "Built-in encryption", "Automatic error correction"],
+    correctAnswer: "Lower latency for real-time applications"
+  },
+  {
+    id: 19,
+    question: "Which protocol is used for domain name resolution?",
+    options: ["HTTP", "DNS", "SMTP", "FTP"],
+    correctAnswer: "DNS"
+  },
+  {
+    id: 20,
+    question: "What is the primary function of a web cache?",
+    options: ["To encrypt web traffic", "To store copies of web objects", "To assign IP addresses", "To route network traffic"],
+    correctAnswer: "To store copies of web objects"
+  },
+  {
+    id: 21,
+    question: "Which HTTP status code indicates a successful request?",
+    options: ["200 OK", "301 Moved Permanently", "404 Not Found", "500 Internal Server Error"],
+    correctAnswer: "200 OK"
+  },
+  {
+    id: 22,
+    question: "What is the purpose of the SMTP protocol?",
+    options: ["To retrieve emails from a server", "To transfer emails between servers", "To encrypt email traffic", "To compose email messages"],
+    correctAnswer: "To transfer emails between servers"
+  },
+  {
+    id: 23,
+    question: "Which DNS record type specifies mail server aliases?",
+    options: ["MX", "A", "CNAME", "NS"],
+    correctAnswer: "MX"
+  },
+  {
+    id: 24,
+    question: "What is the main difference between client-server and P2P architectures?",
+    options: ["Client-server uses centralized servers, P2P uses decentralized nodes", "Client-server is connectionless, P2P is connection-oriented", "Client-server uses TCP, P2P uses UDP", "Client-server is used for web traffic, P2P for file sharing"],
+    correctAnswer: "Client-server uses centralized servers, P2P uses decentralized nodes"
+  },
+  {
+    id: 25,
+    question: "Which HTTP method is used to submit form data to a server?",
+    options: ["GET", "POST", "PUT", "DELETE"],
+    correctAnswer: "POST"
+  },
+  {
+    id: 26,
+    question: "What is the purpose of the DNS root servers?",
+    options: ["To store all domain name to IP mappings", "To handle the final resolution of domain names", "To delegate resolution to appropriate TLD servers", "To cache frequently accessed DNS records"],
+    correctAnswer: "To delegate resolution to appropriate TLD servers"
+  },
+  {
+    id: 27,
+    question: "Which protocol is used for secure email transmission?",
+    options: ["SMTP", "IMAP", "POP3", "TLS"],
+    correctAnswer: "TLS"
+  },
+  {
+    id: 28,
+    question: "What is the main advantage of using HTTP/2 over HTTP/1.1?",
+    options: ["Reduced latency through multiplexing", "Increased security", "Better compression", "Simplified header format"],
+    correctAnswer: "Reduced latency through multiplexing"
+  },
+  {
+    id: 29,
+    question: "Which DNS record type specifies the canonical name for an alias?",
+    options: ["CNAME", "A", "MX", "NS"],
+    correctAnswer: "CNAME"
+  },
+  {
+    id: 30,
+    question: "What is the primary function of the Transport Layer Security (TLS) protocol?",
+    options: ["To provide reliable data transfer", "To encrypt application layer data", "To manage network congestion", "To resolve domain names"],
+    correctAnswer: "To encrypt application layer data"
+  },
+  {
+    id: 31,
+    question: "Which HTTP header is used to specify the resource being requested?",
+    options: ["Host", "User-Agent", "Accept", "Content-Type"],
+    correctAnswer: "Host"
+  },
+  {
+    id: 32,
+    question: "What is the main purpose of the SMTP handshaking process?",
+    options: ["To establish a secure connection", "To verify user credentials", "To identify the sending and receiving servers", "To compress the email message"],
+    correctAnswer: "To identify the sending and receiving servers"
+  },
+  {
+    id: 33,
+    question: "Which DNS query type asks the DNS server to perform the entire name resolution process?",
+    options: ["Iterative query", "Recursive query", "Reverse lookup", "Zone transfer"],
+    correctAnswer: "Recursive query"
+  },
+  {
+    id: 34,
+    question: "What is the main advantage of using persistent HTTP connections?",
+    options: ["Reduced number of TCP handshakes", "Increased bandwidth", "Better encryption", "Simplified header format"],
+    correctAnswer: "Reduced number of TCP handshakes"
+  },
+  {
+    id: 35,
+    question: "Which protocol is used for real-time multimedia streaming?",
+    options: ["HTTP", "FTP", "RTP", "SMTP"],
+    correctAnswer: "RTP"
+  },
+  {
+    id: 36,
+    question: "What is the purpose of the Time-to-Live (TTL) field in DNS records?",
+    options: ["To specify how long a record can be cached", "To indicate the expiration date of a domain", "To determine the priority of mail servers", "To specify the type of resource record"],
+    correctAnswer: "To specify how long a record can be cached"
+  },
+  {
+    id: 37,
+    question: "Which HTTP method is used to upload a file to a server?",
+    options: ["PUT", "POST", "GET", "DELETE"],
+    correctAnswer: "PUT"
+  },
+  {
+    id: 38,
+    question: "What is the main difference between a web cache and a proxy server?",
+    options: ["A web cache stores copies of web objects, while a proxy server forwards requests", "A web cache encrypts traffic, while a proxy server doesn't", "A web cache uses UDP, while a proxy server uses TCP", "There is no difference between them"],
+    correctAnswer: "A web cache stores copies of web objects, while a proxy server forwards requests"
+  },
+  {
+    id: 39,
+    question: "Which protocol is used for secure file transfer?",
+    options: ["FTP", "SFTP", "HTTP", "SMTP"],
+    correctAnswer: "SFTP"
+  },
+  {
+    id: 40,
+    question: "What is the main purpose of the HTTP/2 server push feature?",
+    options: ["To encrypt data", "To compress headers", "To send resources to the client before they are requested", "To increase bandwidth"],
+    correctAnswer: "To send resources to the client before they are requested"
+  }
 ];
