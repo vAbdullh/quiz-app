@@ -12,19 +12,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-
-      - name: Install dependencies
-        run: npm install
-
+    
+      - name: Verify GITHUB_TOKEN
+        run: echo "GITHUB_TOKEN is ${{ secrets.GITHUB_TOKEN }}"
+    
       - name: Build project
         run: npm run build
-
+    
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure GITHUB_TOKEN is available for authentication
         run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically passed during the workflow
+    
