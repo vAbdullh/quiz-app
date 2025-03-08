@@ -25,4 +25,6 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure GITHUB_TOKEN is available for authentication
         run: npm run deploy
