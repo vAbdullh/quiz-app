@@ -1,0 +1,22 @@
+name: Install dependencies
+
+on:
+  push:
+    branches:
+      - main  # Trigger action when code is pushed to main branch.
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # or your required version
+      - name: Install dependencies
+        run: npm install
+      - name: Install gh-pages
+        run: npm install --save-dev gh-pages
