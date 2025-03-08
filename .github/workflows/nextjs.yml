@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # Trigger deployment on changes to the main branch
+      - main
 
 jobs:
   deploy:
@@ -12,15 +12,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-    
-      - name: Verify GITHUB_TOKEN
-        run: echo "GITHUB_TOKEN is ${{ secrets.GITHUB_TOKEN }}"
-    
+
       - name: Build project
         run: npm run build
-    
+
       - name: Deploy to GitHub Pages
-        run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically passed during the workflow
-    
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
