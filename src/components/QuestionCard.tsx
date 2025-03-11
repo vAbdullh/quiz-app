@@ -12,8 +12,13 @@ const QuestionCard: React.FC = () => {
     setSelectedOption,
     checkAnswer,
     isChecking,
-    isCorrect
+    isCorrect,
+    courseTitle
   } = useQuiz();
+
+  if (questions.length === 0) {
+    return null;
+  }
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -36,6 +41,10 @@ const QuestionCard: React.FC = () => {
   return (
     <div className="w-full max-w-3xl mx-auto animate-scale-in">
       <div className="bg-quiz-dark p-6 rounded-xl shadow-lg card-glow">
+        <div className="mb-4 text-sm text-gray-400">
+          {courseTitle}
+        </div>
+        
         <h2 className="text-xl md:text-2xl font-semibold mb-6 text-white">
           {currentQuestion.question}
         </h2>

@@ -4,12 +4,15 @@ import { useQuiz } from "../context/QuizContext";
 import { Check, X } from "lucide-react";
 
 const ProgressBar: React.FC = () => {
-  const { questions, currentQuestionIndex, score, streak, wrongAnswers } = useQuiz();
+  const { questions, currentQuestionIndex, score, streak, wrongAnswers, courseTitle } = useQuiz();
   
-  const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
+  const progress = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0;
   
   return (
     <div className="w-full mb-6">
+      <div className="mb-3 text-sm text-center text-gray-400">
+        {courseTitle}
+      </div>
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1">

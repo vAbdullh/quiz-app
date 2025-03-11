@@ -1,13 +1,18 @@
 
 import React from "react";
-import { QuizProvider } from "../context/QuizContext";
-import QuizLayout from "../components/QuizLayout";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import CourseSelection from "../components/CourseSelection";
 
 const Index: React.FC = () => {
   return (
-    <QuizProvider>
-      <QuizLayout />
-    </QuizProvider>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+        <CourseSelection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 

@@ -1,7 +1,10 @@
+
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { QuizQuestion, quizQuestions } from "../data/quizQuestions";
+import { QuizQuestion, CourseQuiz } from "../types/quiz";
+import { fetchCourseQuiz } from "../services/quizService";
 
 interface QuizContextType {
+  courseTitle: string;
   questions: QuizQuestion[];
   currentQuestionIndex: number;
   score: number;
@@ -11,7 +14,10 @@ interface QuizContextType {
   isCorrect: boolean | null;
   streak: number;
   wrongAnswers: number;
+  isLoading: boolean;
+  error: string | null;
   
+  loadQuiz: (courseId: string) => Promise<void>;
   setSelectedOption: (option: string) => void;
   checkAnswer: () => void;
   goToNextQuestion: () => void;
@@ -23,19 +29,41 @@ interface QuizContextType {
 const QuizContext = createContext<QuizContextType | undefined>(undefined);
 
 export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [questions] = useState<QuizQuestion[]>(quizQuestions);
+  const [courseTitle, setCourseTitle] = useState<string>('');
+  const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
   const [wrongAnswers, setWrongAnswers] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<(string | null)[]>(Array(questions.length).fill(null));
+  const [userAnswers, setUserAnswers] = useState<(string | null)[]>([]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [isChecking, setIsChecking] = useState(false);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [isQuizEnded, setIsQuizEnded] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const loadQuiz = async (courseId: string) => {
+    try {
+      setIsLoading(true);
+      setError(null);
+      
+      const courseQuiz = await fetchCourseQuiz(courseId);
+      
+      setCourseTitle(courseQuiz.courseTitle);
+      setQuestions(courseQuiz.questions);
+      setUserAnswers(Array(courseQuiz.questions.length).fill(null));
+      resetQuiz();
+      setIsLoading(false);
+    } catch (error) {
+      setError("Failed to load quiz. Please try again.");
+      setIsLoading(false);
+      console.error("Error loading quiz:", error);
+    }
+  };
 
   const checkAnswer = () => {
-    if (!selectedOption) return;
+    if (!selectedOption || questions.length === 0) return;
     
     const currentQuestion = questions[currentQuestionIndex];
     const isAnswerCorrect = selectedOption === currentQuestion.correctAnswer;
@@ -96,6 +124,7 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const value = {
+    courseTitle,
     questions,
     currentQuestionIndex,
     score,
@@ -105,6 +134,9 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children
     isCorrect,
     streak,
     wrongAnswers,
+    isLoading,
+    error,
+    loadQuiz,
     setSelectedOption,
     checkAnswer,
     goToNextQuestion,
@@ -122,4 +154,4 @@ export const useQuiz = (): QuizContextType => {
     throw new Error("useQuiz must be used within a QuizProvider");
   }
   return context;
-}; 
+};
