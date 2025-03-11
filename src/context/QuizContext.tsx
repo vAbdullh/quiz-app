@@ -1,5 +1,5 @@
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useCallback } from "react";
 import { QuizQuestion, CourseQuiz } from "../types/quiz";
 import { fetchCourseQuiz } from "../services/quizService";
 
@@ -43,24 +43,36 @@ export const QuizProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const loadQuiz = async (courseId: string) => {
+  const loadQuiz = useCallback(async (courseId: string) => {
     try {
       setIsLoading(true);
       setError(null);
+      console.log(`Loading quiz for course ID: ${courseId}`);
       
       const courseQuiz = await fetchCourseQuiz(courseId);
       
       setCourseTitle(courseQuiz.courseTitle);
       setQuestions(courseQuiz.questions);
       setUserAnswers(Array(courseQuiz.questions.length).fill(null));
-      resetQuiz();
+      
+      // Reset other quiz state
+      setCurrentQuestionIndex(0);
+      setScore(0);
+      setStreak(0);
+      setWrongAnswers(0);
+      setSelectedOption(null);
+      setIsChecking(false);
+      setIsCorrect(null);
+      setIsQuizEnded(false);
+      
       setIsLoading(false);
+      console.log("Quiz loaded successfully with", courseQuiz.questions.length, "questions");
     } catch (error) {
+      console.error("Error in loadQuiz:", error);
       setError("Failed to load quiz. Please try again.");
       setIsLoading(false);
-      console.error("Error loading quiz:", error);
     }
-  };
+  }, []);
 
   const checkAnswer = () => {
     if (!selectedOption || questions.length === 0) return;

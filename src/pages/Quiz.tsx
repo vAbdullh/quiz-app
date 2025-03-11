@@ -13,10 +13,12 @@ const QuizContent: React.FC = () => {
 
   useEffect(() => {
     if (!courseId) {
+      console.error("No courseId provided");
       navigate('/');
       return;
     }
 
+    console.log("QuizContent: Loading quiz for courseId:", courseId);
     loadQuiz(courseId);
   }, [courseId, loadQuiz, navigate]);
 
