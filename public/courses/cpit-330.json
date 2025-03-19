@@ -1,17 +1,661 @@
-
 {
   "courseTitle": "IT and Management (CPIT-330)",
   "questions": [
     {
       "id": 1,
-      "question": "What is the primary goal of IT management?",
+      "question": "Explain the terminologies “Product Knowledge” and “Project Knowledge”?",
+      "options": [],
+      "correctAnswer": "Product knowledge: helps us know more about what the project should be. Project knowledge: information about the team, technologies, risks, etc."
+    },
+    {
+      "id": 2,
+      "question": "Explain in one to two lines each of the 4 key elements that must be considered at the start of the project: Justification, Completion criteria, Deliverables and Success criteria. (JCDS)",
+      "options": [],
+      "correctAnswer": "Justification: Why should we do this project? What will we gain? Completion criteria: What will signal the end of the project? Project deliverables: What components will be delivered to the customer? Success criteria: What quantifiable criteria will determine whether a project was successful after its completion?"
+    },
+    {
+      "id": 3,
+      "question": "Define constraint, what is TSB balance and why it’s important?",
+      "options": [],
+      "correctAnswer": "Constraint: Something that could limit the progress or even the start of a project. The three main constraints are Time, Scope, and Budget. TSB Balance: If you’re limited in one, the other two must give way or must be enhanced to account for the limitation. It’s important because you can’t have them all, so you must balance."
+    },
+    {
+      "id": 4,
+      "question": "Explain the cone of uncertainty?",
+      "options": [],
+      "correctAnswer": "Uncertainty in the schedule decreases as the project progresses"
+    },
+    {
+      "id": 5,
+      "question": "What are the two extremes of planning and which extreme should we go for?",
+      "options": [],
+      "correctAnswer": "1- Over Plan (traditional), 2- Don’t Plan. The answer can vary between students."
+    },
+    {
+      "id": 6,
+      "question": "Explain the following elements of good planning: Reduces Risk, Reduce Uncertainty, Supports better decision making, Establishes trust and convey information. (RUDTI)",
+      "options": [],
+      "correctAnswer": "Reduces risk: Planning exposes potential dark corners of a project. Reduces uncertainty: We need to factor new knowledge we gain into the planning. Supports better decision making: Plans help us make decisions. Establishes trust: Reliable estimates build trust between the developer and customer. Conveys information: A plan conveys a set of baseline expectations."
+    },
+    {
+      "id": 7,
+      "question": "What are the 4 factors make planning agile? (FECS)",
+      "options": [],
+      "correctAnswer": "- Is more focused on planning than the plan. - Encourages changes. - Results in plans that are easily changed. - Is spread throughout the project."
+    },
+    {
+      "id": 8,
+      "question": "You are on a team developing an ecommerce site. You determine that one of your goals is to reduce by 30% the amount of telephone orders in your company. Is this an example of completion or success criterion?",
       "options": [
-        "Developing new hardware", 
-        "Aligning IT resources with business objectives", 
-        "Hiring programmers", 
-        "Eliminating all technology"
+        "Completion criterion",
+        "Success criterion",
+        "Both",
+        "Neither"
       ],
-      "correctAnswer": "Aligning IT resources with business objectives"
+      "correctAnswer": "Success criterion"
+    },
+    {
+      "id": 9,
+      "question": "If you have a rigid submission date and your budget is fixed, what is most likely to suffer?",
+      "options": [
+        "Time",
+        "Scope",
+        "Budget",
+        "Quality"
+      ],
+      "correctAnswer": "Scope"
+    },
+    {
+      "id": 10,
+      "question": "__________helps us know more about what the project should be.",
+      "options": [
+        "Product knowledge",
+        "Project knowledge",
+        "Capability",
+        "Release"
+      ],
+      "correctAnswer": "Product knowledge"
+    },
+    {
+      "id": 11,
+      "question": "As a project manager, you have a project with short timeline, what should you do?",
+      "options": [
+        "Scope must be reduced",
+        "The budget must be increase",
+        "Accept the project as is",
+        "(a) and (b) should be considered"
+      ],
+      "correctAnswer": "(a) and (b) should be considered"
+    },
+    {
+      "id": 12,
+      "question": "“What user story we should build?”. This statement refers to:",
+      "options": [
+        "Cost",
+        "Time",
+        "Scope",
+        "Quality"
+      ],
+      "correctAnswer": "Scope"
+    },
+    {
+      "id": 13,
+      "question": "The main key characteristics of any project that is only should have recognizable beginning and is unique/original.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 14,
+      "question": "Why is it disadvantageous to plan by activity rather than feature?",
+      "options": [],
+      "correctAnswer": "- Progress reports are of no value to the customer because features are their unit of understanding. - When the project overruns its schedule, teams reduce quality / constraint valuable changes."
+    },
+    {
+      "id": 15,
+      "question": "Why traditional planning methods fails, explain it by elaborating on (Planning by activity, multitasking, developing out of priority, ignoring uncertainty, estimates become commitments)? (PMFUE)",
+      "options": [],
+      "correctAnswer": "- Planning by activity rather than feature - Multitasking - Developing features out of priority - Ignoring uncertainty - Estimates become commitments"
+    },
+    {
+      "id": 16,
+      "question": "What is the Parkinson’s Law.?",
+      "options": [],
+      "correctAnswer": "Work expands to fill the time available for its completion."
+    },
+    {
+      "id": 17,
+      "question": "With and without multitasking the three tasks take 30 days in total. So where’s the problem?",
+      "options": [],
+      "correctAnswer": "- Work (the database and API) finish later than planned, which will ripple through the project. - Work remains in process longer (20 days vs. 10). - Plus, we still need to add overhead time."
+    },
+    {
+      "id": 18,
+      "question": "Activities are independent if the duration of one does affect the duration of another.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 19,
+      "question": "When an activity takes longer than planned, all similar activities are likely to",
+      "options": [
+        "be the same",
+        "have no effect",
+        "take longer",
+        "take shorter"
+      ],
+      "correctAnswer": "take longer"
+    },
+    {
+      "id": 20,
+      "question": "Software activities are not independent.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 21,
+      "question": "In traditional planning multitasking is compounded that the work is assigned",
+      "options": [
+        "to individuals not groups",
+        "to groups not individuals",
+        "to experience groups",
+        "to agile group"
+      ],
+      "correctAnswer": "to individuals not groups"
+    },
+    {
+      "id": 22,
+      "question": "Change during a project is not encouraged in agile plans.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 23,
+      "question": "Traditional Planning methods fail:",
+      "options": [
+        "Planning by activity rather than feature",
+        "Planning by feature rather than activity",
+        "Planning by feature",
+        "Traditional planning never fail"
+      ],
+      "correctAnswer": "Planning by activity rather than feature"
+    },
+    {
+      "id": 24,
+      "question": "In traditional planning, it is considered better to multitasking no more than:",
+      "options": [
+        "2 tasks",
+        "3 tasks",
+        "4 tasks",
+        "5 tasks"
+      ],
+      "correctAnswer": "2 tasks"
+    },
+    {
+      "id": 25,
+      "question": "Define release and release plan",
+      "options": [],
+      "correctAnswer": "Release: comprises several iterations that complete a set of related functionalities (months). Release plan: is created with a prioritized list of independent features."
+    },
+    {
+      "id": 26,
+      "question": "What is meant by user stories? Give an example.",
+      "options": [],
+      "correctAnswer": "A brief description of functionality as viewed by a user of the system. Example: a story of requirements described by student."
+    },
+    {
+      "id": 27,
+      "question": "List the six levels of planning (onion). (SPPRID)",
+      "options": [],
+      "correctAnswer": "- Strategy planning. - Portfolio planning. - Product planning. - Release planning. - Iteration planning. - Daily planning."
+    },
+    {
+      "id": 28,
+      "question": "In agile approach to planning, what is meant by product planning.",
+      "options": [],
+      "correctAnswer": "Planning the evolution of product."
+    },
+    {
+      "id": 29,
+      "question": "Agile Methodology value processes and tools over individuals",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 30,
+      "question": "____________ ensures team is working on one vision, establishes priority of features, and makes decisions for a good investment.",
+      "options": [
+        "Customer",
+        "Product owner",
+        "Developer",
+        "Project manager"
+      ],
+      "correctAnswer": "Product owner"
+    },
+    {
+      "id": 31,
+      "question": "Project manager can be a developer or a product owner",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 32,
+      "question": "Ali, the web manager, doesn’t like how Ahmed, the DBA, has designed the DBs. Ali says it’s Ahmed’s code that needs tightening. What can the project manager do to avoid / resolve such situations? (THE)",
+      "options": [
+        "Establish standards",
+        "Have team-building exercises",
+        "Train or monitor poorly performing members",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "id": 33,
+      "question": "Each iteration contains all work concurrently: (ADCT)",
+      "options": [
+        "Analysis&design",
+        "coding&testing",
+        "All of the above",
+        "none of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "id": 34,
+      "question": "Like traditional planning, in agile there are 4 phases (analysis, design, implementation, testing).",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 35,
+      "question": "Each iteration, in the project planning, has the same _____.",
+      "options": [
+        "story points",
+        "Time box",
+        "knowledge",
+        "features"
+      ],
+      "correctAnswer": "Time box"
+    },
+    {
+      "id": 36,
+      "question": "A _________ comprises several iterations that complete a set of related functionality (3-6 months).",
+      "options": [
+        "plan",
+        "story",
+        "product",
+        "release"
+      ],
+      "correctAnswer": "release"
+    },
+    {
+      "id": 37,
+      "question": "Portfolio planning focuses on:",
+      "options": [
+        "Selection of product",
+        "Defining a company’s vision",
+        "The evolution of product",
+        "Defining a company’s mission"
+      ],
+      "correctAnswer": "Selection of product"
+    },
+    {
+      "id": 38,
+      "question": "You are on a team upgrading the customer relationship management (CRM) software for a company’s call centers. The vice president for customer relations doesn’t directly use the software but wants customer calls answered faster and better. She is the ___________.",
+      "options": [
+        "Product owner"
+      ],
+      "correctAnswer": "Product owner"
+    },
+    {
+      "id": 39,
+      "question": "What are the 3 stages of agile planning?",
+      "options": [],
+      "correctAnswer": "1- Generate and use new project and product knowledge, 2- plan at multiple levels, 3- use condition of satisfaction to drive release and iteration planning"
+    },
+    {
+      "id": 40,
+      "question": "Why are planning estimation important.",
+      "options": [],
+      "correctAnswer": "Good estimates now will lead to projects at/under budget and on/before the deadline."
+    },
+    {
+      "id": 41,
+      "question": "What is a story point?",
+      "options": [],
+      "correctAnswer": "A unit of measure for expressing the size of user story/feature."
+    },
+    {
+      "id": 42,
+      "question": "What is the meaning of cross-functional behavior in story points estimation.",
+      "options": [],
+      "correctAnswer": "Story point estimates are based on discussions that result in one number representing all the work for the whole team."
+    },
+    {
+      "id": 43,
+      "question": "What is Velocity in story points.",
+      "options": [],
+      "correctAnswer": "Velocity: a measure of a team’s rate of progress."
+    },
+    {
+      "id": 44,
+      "question": "if a team completes three 5-point stories in one iteration, what is their velocity?",
+      "options": [
+        "5 story points per iteration",
+        "10 story points per iteration",
+        "15 story points per iteration",
+        "20 story points per iteration"
+      ],
+      "correctAnswer": "15 story points per iteration"
+    },
+    {
+      "id": 45,
+      "question": "A project of 25 user stories estimated at 100 story-points. Team’s velocity from experience is 10 story-points per 2-week iteration. How many weeks they need to finish the project?",
+      "options": [
+        "10 weeks",
+        "15 weeks",
+        "20 weeks",
+        "25 weeks"
+      ],
+      "correctAnswer": "20 weeks"
+    },
+    {
+      "id": 46,
+      "question": "Story points are a pure measure the size of user story.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 47,
+      "question": "A unit of measure for expressing the size of a user story is:",
+      "options": [
+        "Size",
+        "Velocity",
+        "Story point",
+        "Ideal day"
+      ],
+      "correctAnswer": "Story point"
+    },
+    {
+      "id": 48,
+      "question": "________ a measure of a team’s rate of progress",
+      "options": [
+        "Size",
+        "Velocity",
+        "Story point",
+        "Ideal day"
+      ],
+      "correctAnswer": "Velocity"
+    },
+    {
+      "id": 49,
+      "question": "________ = sum of story points assigned to each user story the team completed during an iteration",
+      "options": [
+        "Size",
+        "Velocity",
+        "Story point",
+        "Ideal day"
+      ],
+      "correctAnswer": "Velocity"
+    },
+    {
+      "id": 50,
+      "question": "Size of a story point is based on the effort, complexity, and risk in a feature",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 51,
+      "question": "In traditional methodology, teams don't start talking about details and activities in early stages",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 52,
+      "question": "Good estimates will lead to projects above budget and after deadlines",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 53,
+      "question": "The exact size, of the story points, is not important, it is the _______ size that counts.",
+      "options": [
+        "Absolute",
+        "Relative",
+        "Actual",
+        "Estimated"
+      ],
+      "correctAnswer": "Relative"
+    },
+    {
+      "id": 54,
+      "question": "Explain how velocity corrects estimation errors?",
+      "options": [],
+      "correctAnswer": "By separating estimation of effort from estimation of duration, estimation errors become easy to correct"
+    },
+    {
+      "id": 55,
+      "question": "Explain how ideal time is different than elapsed time. Which one is measurement for agile projects.",
+      "options": [],
+      "correctAnswer": "- Ideal time: time that something takes when stripped of all peripheral activities. - Elapsed time: time that passes on a clock/calendar."
+    },
+    {
+      "id": 56,
+      "question": "List the five advantages for estimating size in story points. (BEMFI)",
+      "options": [],
+      "correctAnswer": "1. Story points help drive cross-functional behavior. 2. Story point estimates don’t decay. 3. Story points are a pure measure of size. 4. Estimating in story points is typically faster. 5. My ideal days ≠ your ideal days."
+    },
+    {
+      "id": 57,
+      "question": "What does it mean that story points help derive cross-functional behavior.",
+      "options": [],
+      "correctAnswer": "Story point estimates are based on discussions that result in one number representing all the work for the whole team"
+    },
+    {
+      "id": 58,
+      "question": "List the two advantages for estimating the user story size in ideal days.",
+      "options": [],
+      "correctAnswer": "1. Ideal days are easier to explain outside the team. 2. Ideal days are easier to estimate at first."
+    },
+    {
+      "id": 59,
+      "question": "Explain how ideal days are easier to estimate at first.",
+      "options": [],
+      "correctAnswer": "Compared to ideal days, estimating in story points can be difficult and strange at first, especially with no baseline of previously estimated stories to compare with."
+    },
+    {
+      "id": 60,
+      "question": "It’s easier and more accurate to predict elapsed time than ideal time.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 61,
+      "question": "Instead of story points, we can estimate the size of a user story by:",
+      "options": [
+        "Estimating the elapsed time it will take to finish it.",
+        "Estimating only by story point.",
+        "Estimating the ideal time it will take to finish it.",
+        "None from the above."
+      ],
+      "correctAnswer": "Estimating the ideal time it will take to finish it."
+    },
+    {
+      "id": 62,
+      "question": "While estimating idle time it is preferred to avoid writing separate estimates for everyone in the team.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 63,
+      "question": "Estimating in story points is slower than other methods.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
+    },
+    {
+      "id": 64,
+      "question": "An estimate in ___________ can change based on a team’s experience.",
+      "options": [
+        "analogy",
+        "disaggregation",
+        "Story points",
+        "Ideal days"
+      ],
+      "correctAnswer": "Ideal days"
+    },
+    {
+      "id": 65,
+      "question": "While estimating in _____________, the team tend to think about the details and tasks necessary to develop the user story.",
+      "options": [
+        "analogy",
+        "disaggregation",
+        "Story points",
+        "Ideal days"
+      ],
+      "correctAnswer": "Ideal days"
+    },
+    {
+      "id": 66,
+      "question": "Explain what the law of diminishing return (cookie analogy) is.",
+      "options": [],
+      "correctAnswer": "Agile teams use less effort to get a similar accuracy and rely on iterative updates to improve the accuracy."
+    },
+    {
+      "id": 67,
+      "question": "When the team can use zero for estimate a user story.",
+      "options": [],
+      "correctAnswer": "Use it when you don’t want a trivial feature to count in your velocity calculation."
+    },
+    {
+      "id": 68,
+      "question": "What is the alternative to using zero for estimation?",
+      "options": [],
+      "correctAnswer": "Alternative: group small, trivial stories and estimate them as a unit"
+    },
+    {
+      "id": 69,
+      "question": "If we estimate all user stories within one order of magnitude, then we need all stories to be written at a fine-grained level, However, large user stories can be written for features:",
+      "options": [
+        "we may not implement.",
+        "that will be implemented far into the future.",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correctAnswer": "Both A and B"
+    },
+    {
+      "id": 70,
+      "question": "What is the difference between Theme and Epic, in user stories estimate.",
+      "options": [],
+      "correctAnswer": "Theme: set of related stories. Epic: a large user story."
+    },
+    {
+      "id": 71,
+      "question": "List down the three techniques for deriving estimate and define each technique.",
+      "options": [],
+      "correctAnswer": "Expert opinion: An expert is asked to estimate the user story based on their intuition and experience. Analogy: Estimators compares the story with other stories. Disaggregation: Break a large story you find difficult to estimate into smaller stories you can estimate."
+    },
+    {
+      "id": 72,
+      "question": "Explain what triangulation in analogy estimation is, give an example.",
+      "options": [],
+      "correctAnswer": "Compare the story with an assortment of stories that have already been estimated. Example: If thinking of estimating a story at 5 points, compare it to a story you estimated at 3 and one you estimated at 8."
+    },
+    {
+      "id": 73,
+      "question": "Write two reasons of what is the problem with disaggregation of a user story.",
+      "options": [],
+      "correctAnswer": "1. Forgotten tasks. 2. Summing many small errors can result in a larger error."
+    },
+    {
+      "id": 74,
+      "question": "In the law of diminishing return, it is possible to put too much effort into estimating, that will be resulting in a less accurate estimate.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 75,
+      "question": "Traditionally, the person who will do the work makes the estimate.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "True"
+    },
+    {
+      "id": 76,
+      "question": "Example of a good sequence scale:",
+      "options": [
+        "0, 1, 2, 5, and 8",
+        "1, 2, 4, and 8",
+        "1, 2, 3, 5, and 8",
+        "1, 2, 5, 8, and 10"
+      ],
+      "correctAnswer": "0, 1, 2, 5, and 8"
+    },
+    {
+      "id": 77,
+      "question": "Large user stories can be estimated for features:",
+      "options": [
+        "We may not implement",
+        "that will be implemented far into the future",
+        "that will be implemented into first 1-3 iterations",
+        "(a) and (b) should be considered"
+      ],
+      "correctAnswer": "(a) and (b) should be considered"
+    },
+    {
+      "id": 78,
+      "question": "For a large user story, team tend to reduce estimation effort, but estimates of themes/epics are more accurate than their smaller stories.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "False"
     }
   ]
 }
