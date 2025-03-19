@@ -4,43 +4,78 @@
     {
       "id": 1,
       "question": "Explain the terminologies “Product Knowledge” and “Project Knowledge”?",
-      "options": [],
-      "correctAnswer": "Product knowledge: helps us know more about what the project should be. Project knowledge: information about the team, technologies, risks, etc."
+      "options": [
+        "Product knowledge helps us know more about what the project should be. Project knowledge is information about the team, technologies, risks, etc.",
+        "Product knowledge is about the team's skills. Project knowledge is about the product features.",
+        "Product knowledge is about market trends. Project knowledge is about the project schedule.",
+        "Product knowledge is about customer requirements. Project knowledge is about resource allocation."
+      ],
+      "correctAnswer": "Product knowledge helps us know more about what the project should be. Project knowledge is information about the team, technologies, risks, etc."
     },
     {
       "id": 2,
       "question": "Explain in one to two lines each of the 4 key elements that must be considered at the start of the project: Justification, Completion criteria, Deliverables and Success criteria. (JCDS)",
-      "options": [],
+      "options": [
+        "Justification: Why should we do this project? What will we gain? Completion criteria: What will signal the end of the project? Project deliverables: What components will be delivered to the customer? Success criteria: What quantifiable criteria will determine whether a project was successful after its completion?",
+        "Justification: What resources are needed? Completion criteria: What is the budget? Project deliverables: What features will be included? Success criteria: What is the team's efficiency?",
+        "Justification: What is the market demand? Completion criteria: What is the timeline? Project deliverables: What documentation will be produced? Success criteria: What is the customer satisfaction level?",
+        "Justification: What is the business value? Completion criteria: What is the scope? Project deliverables: What prototypes will be developed? Success criteria: What is the return on investment?"
+      ],
       "correctAnswer": "Justification: Why should we do this project? What will we gain? Completion criteria: What will signal the end of the project? Project deliverables: What components will be delivered to the customer? Success criteria: What quantifiable criteria will determine whether a project was successful after its completion?"
     },
     {
       "id": 3,
       "question": "Define constraint, what is TSB balance and why it’s important?",
-      "options": [],
+      "options": [
+        "Constraint: Something that could limit the progress or even the start of a project. The three main constraints are Time, Scope, and Budget. TSB Balance: If you’re limited in one, the other two must give way or must be enhanced to account for the limitation. It’s important because you can’t have them all, so you must balance.",
+        "Constraint: A factor that determines project success. TSB Balance: The balance between Technology, Skills, and Budget. It’s important for resource allocation.",
+        "Constraint: A limitation on team capacity. TSB Balance: The balance between Time, Staff, and Budget. It’s important for project scheduling.",
+        "Constraint: A restriction on project scope. TSB Balance: The balance between Technology, Scope, and Budget. It’s important for quality assurance."
+      ],
       "correctAnswer": "Constraint: Something that could limit the progress or even the start of a project. The three main constraints are Time, Scope, and Budget. TSB Balance: If you’re limited in one, the other two must give way or must be enhanced to account for the limitation. It’s important because you can’t have them all, so you must balance."
     },
     {
       "id": 4,
       "question": "Explain the cone of uncertainty?",
-      "options": [],
+      "options": [
+        "Uncertainty in the schedule decreases as the project progresses",
+        "Uncertainty in the schedule increases as the project progresses",
+        "Uncertainty in the schedule remains constant throughout the project",
+        "Uncertainty in the schedule is highest at the project's midpoint"
+      ],
       "correctAnswer": "Uncertainty in the schedule decreases as the project progresses"
     },
     {
       "id": 5,
       "question": "What are the two extremes of planning and which extreme should we go for?",
-      "options": [],
+      "options": [
+        "1- Over Plan (traditional), 2- Don’t Plan. The answer can vary between students.",
+        "1- Flexible Plan, 2- Rigid Plan. The answer can vary between students.",
+        "1- High-Level Plan, 2- Detailed Plan. The answer can vary between students.",
+        "1- Short-Term Plan, 2- Long-Term Plan. The answer can vary between students."
+      ],
       "correctAnswer": "1- Over Plan (traditional), 2- Don’t Plan. The answer can vary between students."
     },
     {
       "id": 6,
       "question": "Explain the following elements of good planning: Reduces Risk, Reduce Uncertainty, Supports better decision making, Establishes trust and convey information. (RUDTI)",
-      "options": [],
+      "options": [
+        "Reduces risk: Planning exposes potential dark corners of a project. Reduces uncertainty: We need to factor new knowledge we gain into the planning. Supports better decision making: Plans help us make decisions. Establishes trust: Reliable estimates build trust between the developer and customer. Conveys information: A plan conveys a set of baseline expectations.",
+        "Reduces risk: Planning eliminates all potential problems. Reduces uncertainty: We can predict all future events. Supports better decision making: Plans are always accurate. Establishes trust: Detailed plans guarantee success. Conveys information: A plan documents all project details.",
+        "Reduces risk: Planning identifies some potential issues. Reduces uncertainty: We can make educated guesses. Supports better decision making: Plans provide some guidance. Establishes trust: Reasonable estimates help relationships. Conveys information: A plan shares some project information.",
+        "Reduces risk: Planning ensures no risks remain. Reduces uncertainty: We can control all variables. Supports better decision making: Plans are followed exactly. Establishes trust: Comprehensive plans ensure confidence. Conveys information: A plan communicates all necessary details."
+      ],
       "correctAnswer": "Reduces risk: Planning exposes potential dark corners of a project. Reduces uncertainty: We need to factor new knowledge we gain into the planning. Supports better decision making: Plans help us make decisions. Establishes trust: Reliable estimates build trust between the developer and customer. Conveys information: A plan conveys a set of baseline expectations."
     },
     {
       "id": 7,
       "question": "What are the 4 factors make planning agile? (FECS)",
-      "options": [],
+      "options": [
+        "- Is more focused on planning than the plan. - Encourages changes. - Results in plans that are easily changed. - Is spread throughout the project.",
+        "- Is more focused on the plan than planning. - Discourages changes. - Results in fixed plans. - Is concentrated at the project start.",
+        "- Is balanced between planning and the plan. - Allows some changes. - Results in moderately flexible plans. - Is distributed across key phases.",
+        "- Is less focused on planning than the plan. - Resists changes. - Results in rigid plans. - Is limited to specific intervals."
+      ],
       "correctAnswer": "- Is more focused on planning than the plan. - Encourages changes. - Results in plans that are easily changed. - Is spread throughout the project."
     },
     {
@@ -110,25 +145,45 @@
     {
       "id": 14,
       "question": "Why is it disadvantageous to plan by activity rather than feature?",
-      "options": [],
+      "options": [
+        "- Progress reports are of no value to the customer because features are their unit of understanding. - When the project overruns its schedule, teams reduce quality / constraint valuable changes.",
+        "- Progress reports are too detailed for management. - When the project is behind schedule, teams cut documentation.",
+        "- Progress reports focus on technical aspects. - When the project is delayed, teams skip testing.",
+        "- Progress reports are too vague for stakeholders. - When the project is overdue, teams reduce scope."
+      ],
       "correctAnswer": "- Progress reports are of no value to the customer because features are their unit of understanding. - When the project overruns its schedule, teams reduce quality / constraint valuable changes."
     },
     {
       "id": 15,
       "question": "Why traditional planning methods fails, explain it by elaborating on (Planning by activity, multitasking, developing out of priority, ignoring uncertainty, estimates become commitments)? (PMFUE)",
-      "options": [],
+      "options": [
+        "- Planning by activity rather than feature - Multitasking - Developing features out of priority - Ignoring uncertainty - Estimates become commitments",
+        "- Planning by feature rather than activity - Single-tasking - Developing features in priority - Considering uncertainty - Estimates remain flexible",
+        "- Planning by deliverables rather than activities - Limited multitasking - Developing features by importance - Acknowledging uncertainty - Estimates are preliminary",
+        "- Planning by milestones rather than activities - Controlled multitasking - Developing features by dependency - Managing uncertainty - Estimates are negotiable"
+      ],
       "correctAnswer": "- Planning by activity rather than feature - Multitasking - Developing features out of priority - Ignoring uncertainty - Estimates become commitments"
     },
     {
       "id": 16,
       "question": "What is the Parkinson’s Law.?",
-      "options": [],
+      "options": [
+        "Work expands to fill the time available for its completion.",
+        "Work contracts to fit the time available for its completion.",
+        "Work remains constant regardless of the time available for its completion.",
+        "Work quality improves with more time available for its completion."
+      ],
       "correctAnswer": "Work expands to fill the time available for its completion."
     },
     {
       "id": 17,
       "question": "With and without multitasking the three tasks take 30 days in total. So where’s the problem?",
-      "options": [],
+      "options": [
+        "- Work (the database and API) finish later than planned, which will ripple through the project. - Work remains in process longer (20 days vs. 10). - Plus, we still need to add overhead time.",
+        "- Work finishes earlier than planned, causing idle time. - Work is completed too quickly (10 days vs. 20). - Plus, we have unused resources.",
+        "- Work is completed on time, but quality suffers. - Work takes the same time (30 days). - Plus, we have increased stress.",
+        "- Work is delayed due to resource conflicts. - Work takes longer than planned (40 days). - Plus, we have communication issues."
+      ],
       "correctAnswer": "- Work (the database and API) finish later than planned, which will ripple through the project. - Work remains in process longer (20 days vs. 10). - Plus, we still need to add overhead time."
     },
     {
@@ -205,25 +260,45 @@
     {
       "id": 25,
       "question": "Define release and release plan",
-      "options": [],
+      "options": [
+        "Release: comprises several iterations that complete a set of related functionalities (months). Release plan: is created with a prioritized list of independent features.",
+        "Release: a single iteration that delivers all functionality. Release plan: is created with a fixed list of features.",
+        "Release: a set of related iterations that deliver partial functionality. Release plan: is created with a flexible list of features.",
+        "Release: a collection of iterations that deliver unrelated functionality. Release plan: is created with a prioritized list of tasks."
+      ],
       "correctAnswer": "Release: comprises several iterations that complete a set of related functionalities (months). Release plan: is created with a prioritized list of independent features."
     },
     {
       "id": 26,
       "question": "What is meant by user stories? Give an example.",
-      "options": [],
+      "options": [
+        "A brief description of functionality as viewed by a user of the system. Example: a story of requirements described by student.",
+        "A detailed technical specification document. Example: a technical architecture diagram.",
+        "A marketing requirement document. Example: a market analysis report.",
+        "A project management plan. Example: a Gantt chart schedule."
+      ],
       "correctAnswer": "A brief description of functionality as viewed by a user of the system. Example: a story of requirements described by student."
     },
     {
       "id": 27,
       "question": "List the six levels of planning (onion). (SPPRID)",
-      "options": [],
+      "options": [
+        "- Strategy planning. - Portfolio planning. - Product planning. - Release planning. - Iteration planning. - Daily planning.",
+        "- Strategic planning. - Program planning. - Project planning. - Phase planning. - Task planning. - Hourly planning.",
+        "- Long-term planning. - Medium-term planning. - Short-term planning. - Release planning. - Sprint planning. - Daily planning.",
+        "- Executive planning. - Departmental planning. - Team planning. - Release planning. - Iteration planning. - Daily planning."
+      ],
       "correctAnswer": "- Strategy planning. - Portfolio planning. - Product planning. - Release planning. - Iteration planning. - Daily planning."
     },
     {
       "id": 28,
       "question": "In agile approach to planning, what is meant by product planning.",
-      "options": [],
+      "options": [
+        "Planning the evolution of product.",
+        "Planning the manufacturing process of the product.",
+        "Planning the marketing strategy for the product.",
+        "Planning the distribution channels for the product."
+      ],
       "correctAnswer": "Planning the evolution of product."
     },
     {
@@ -330,31 +405,56 @@
     {
       "id": 39,
       "question": "What are the 3 stages of agile planning?",
-      "options": [],
+      "options": [
+        "1- Generate and use new project and product knowledge, 2- plan at multiple levels, 3- use condition of satisfaction to drive release and iteration planning",
+        "1- Define requirements, 2- develop features, 3- test and deploy",
+        "1- Initiation, 2- execution, 3- closure",
+        "1- Strategy formulation, 2- tactical planning, 3- operational execution"
+      ],
       "correctAnswer": "1- Generate and use new project and product knowledge, 2- plan at multiple levels, 3- use condition of satisfaction to drive release and iteration planning"
     },
     {
       "id": 40,
       "question": "Why are planning estimation important.",
-      "options": [],
+      "options": [
+        "Good estimates now will lead to projects at/under budget and on/before the deadline.",
+        "Good estimates now will lead to projects above budget and after deadlines.",
+        "Good estimates now will have no impact on project outcomes.",
+        "Good estimates now will only affect the project schedule."
+      ],
       "correctAnswer": "Good estimates now will lead to projects at/under budget and on/before the deadline."
     },
     {
       "id": 41,
       "question": "What is a story point?",
-      "options": [],
+      "options": [
+        "A unit of measure for expressing the size of user story/feature.",
+        "A unit of measure for expressing the time required for a task.",
+        "A unit of measure for expressing the cost of a feature.",
+        "A unit of measure for expressing the quality of a deliverable."
+      ],
       "correctAnswer": "A unit of measure for expressing the size of user story/feature."
     },
     {
       "id": 42,
       "question": "What is the meaning of cross-functional behavior in story points estimation.",
-      "options": [],
+      "options": [
+        "Story point estimates are based on discussions that result in one number representing all the work for the whole team.",
+        "Story point estimates are based on individual assessments by each team member.",
+        "Story point estimates are based on historical data from previous projects.",
+        "Story point estimates are based on external benchmarks and standards."
+      ],
       "correctAnswer": "Story point estimates are based on discussions that result in one number representing all the work for the whole team."
     },
     {
       "id": 43,
       "question": "What is Velocity in story points.",
-      "options": [],
+      "options": [
+        "Velocity: a measure of a team’s rate of progress.",
+        "Velocity: a measure of a team’s communication efficiency.",
+        "Velocity: a measure of a team’s code quality.",
+        "Velocity: a measure of a team’s meeting frequency."
+      ],
       "correctAnswer": "Velocity: a measure of a team’s rate of progress."
     },
     {
@@ -462,37 +562,67 @@
     {
       "id": 54,
       "question": "Explain how velocity corrects estimation errors?",
-      "options": [],
+      "options": [
+        "By separating estimation of effort from estimation of duration, estimation errors become easy to correct",
+        "By combining estimation of effort and duration, estimation errors are minimized",
+        "By ignoring estimation errors and focusing on actual performance",
+        "By using historical data to adjust future estimates"
+      ],
       "correctAnswer": "By separating estimation of effort from estimation of duration, estimation errors become easy to correct"
     },
     {
       "id": 55,
       "question": "Explain how ideal time is different than elapsed time. Which one is measurement for agile projects.",
-      "options": [],
+      "options": [
+        "- Ideal time: time that something takes when stripped of all peripheral activities. - Elapsed time: time that passes on a clock/calendar.",
+        "- Ideal time: time that passes on a clock/calendar. - Elapsed time: time that something takes when stripped of all peripheral activities.",
+        "- Ideal time: time estimated by the team. - Elapsed time: time measured by the project manager.",
+        "- Ideal time: time allocated for planning. - Elapsed time: time spent on execution."
+      ],
       "correctAnswer": "- Ideal time: time that something takes when stripped of all peripheral activities. - Elapsed time: time that passes on a clock/calendar."
     },
     {
       "id": 56,
       "question": "List the five advantages for estimating size in story points. (BEMFI)",
-      "options": [],
+      "options": [
+        "1. Story points help drive cross-functional behavior. 2. Story point estimates don’t decay. 3. Story points are a pure measure of size. 4. Estimating in story points is typically faster. 5. My ideal days ≠ your ideal days.",
+        "1. Story points help drive individual accountability. 2. Story point estimates are always accurate. 3. Story points are a measure of time. 4. Estimating in story points is very slow. 5. My ideal days are the same as your ideal days.",
+        "1. Story points help drive team competition. 2. Story point estimates become outdated quickly. 3. Story points are a measure of cost. 4. Estimating in story points requires extensive documentation. 5. My ideal days are better than your ideal days.",
+        "1. Story points help drive departmental alignment. 2. Story point estimates vary widely. 3. Story points are a measure of quality. 4. Estimating in story points is resource-intensive. 5. My ideal days are different from your ideal days."
+      ],
       "correctAnswer": "1. Story points help drive cross-functional behavior. 2. Story point estimates don’t decay. 3. Story points are a pure measure of size. 4. Estimating in story points is typically faster. 5. My ideal days ≠ your ideal days."
     },
     {
       "id": 57,
       "question": "What does it mean that story points help derive cross-functional behavior.",
-      "options": [],
+      "options": [
+        "Story point estimates are based on discussions that result in one number representing all the work for the whole team",
+        "Story point estimates are based on individual assessments that are then averaged",
+        "Story point estimates are based on external benchmarks that the team must meet",
+        "Story point estimates are based on historical performance metrics"
+      ],
       "correctAnswer": "Story point estimates are based on discussions that result in one number representing all the work for the whole team"
     },
     {
       "id": 58,
       "question": "List the two advantages for estimating the user story size in ideal days.",
-      "options": [],
+      "options": [
+        "1. Ideal days are easier to explain outside the team. 2. Ideal days are easier to estimate at first.",
+        "1. Ideal days are more precise than story points. 2. Ideal days are preferred by management.",
+        "1. Ideal days are easier to convert to calendar days. 2. Ideal days are more intuitive for new teams.",
+        "1. Ideal days are required for regulatory compliance. 2. Ideal days are easier to track in project management software."
+      ],
       "correctAnswer": "1. Ideal days are easier to explain outside the team. 2. Ideal days are easier to estimate at first."
     },
     {
       "id": 59,
       "question": "Explain how ideal days are easier to estimate at first.",
-      "options": [],
+      "options": [
+        "Compared to ideal days, estimating in story points can be difficult and strange at first, especially with no baseline of previously estimated stories to compare with.",
+        "Compared to ideal days, estimating in story points is more familiar and straightforward at first.",
+        "Compared to ideal days, estimating in story points requires less discussion and collaboration at first.",
+        "Compared to ideal days, estimating in story points is more aligned with traditional methods at first."
+      ],
       "correctAnswer": "Compared to ideal days, estimating in story points can be difficult and strange at first, especially with no baseline of previously estimated stories to compare with."
     },
     {
@@ -558,19 +688,34 @@
     {
       "id": 66,
       "question": "Explain what the law of diminishing return (cookie analogy) is.",
-      "options": [],
+      "options": [
+        "Agile teams use less effort to get a similar accuracy and rely on iterative updates to improve the accuracy.",
+        "Agile teams use more effort to achieve higher accuracy and avoid iterative updates.",
+        "Agile teams focus on perfecting initial estimates and avoid making changes.",
+        "Agile teams rely on external experts to improve estimation accuracy."
+      ],
       "correctAnswer": "Agile teams use less effort to get a similar accuracy and rely on iterative updates to improve the accuracy."
     },
     {
       "id": 67,
       "question": "When the team can use zero for estimate a user story.",
-      "options": [],
+      "options": [
+        "Use it when you don’t want a trivial feature to count in your velocity calculation.",
+        "Use it when the feature is the most important in the iteration.",
+        "Use it when the feature requires significant effort.",
+        "Use it when the feature is technically complex."
+      ],
       "correctAnswer": "Use it when you don’t want a trivial feature to count in your velocity calculation."
     },
     {
       "id": 68,
       "question": "What is the alternative to using zero for estimation?",
-      "options": [],
+      "options": [
+        "Alternative: group small, trivial stories and estimate them as a unit",
+        "Alternative: estimate each trivial story individually",
+        "Alternative: assign a standard value to all trivial stories",
+        "Alternative: exclude trivial stories from planning"
+      ],
       "correctAnswer": "Alternative: group small, trivial stories and estimate them as a unit"
     },
     {
@@ -587,25 +732,45 @@
     {
       "id": 70,
       "question": "What is the difference between Theme and Epic, in user stories estimate.",
-      "options": [],
+      "options": [
+        "Theme: set of related stories. Epic: a large user story.",
+        "Theme: a single user story. Epic: a collection of themes.",
+        "Theme: a technical task. Epic: a user-facing feature.",
+        "Theme: a project milestone. Epic: a release deliverable."
+      ],
       "correctAnswer": "Theme: set of related stories. Epic: a large user story."
     },
     {
       "id": 71,
       "question": "List down the three techniques for deriving estimate and define each technique.",
-      "options": [],
+      "options": [
+        "Expert opinion: An expert is asked to estimate the user story based on their intuition and experience. Analogy: Estimators compares the story with other stories. Disaggregation: Break a large story you find difficult to estimate into smaller stories you can estimate.",
+        "Expert opinion: A novice provides an estimate based on limited experience. Analogy: Estimators compare the story with external projects. Disaggregation: Combine multiple stories into a larger one for easier estimation.",
+        "Expert opinion: A manager dictates the estimate based on deadlines. Analogy: Estimators use historical data from unrelated domains. Disaggregation: Divide the story into technical tasks rather than user features.",
+        "Expert opinion: A customer provides an estimate based on business value. Analogy: Estimators use market research comparisons. Disaggregation: Split the story into UI and backend components separately."
+      ],
       "correctAnswer": "Expert opinion: An expert is asked to estimate the user story based on their intuition and experience. Analogy: Estimators compares the story with other stories. Disaggregation: Break a large story you find difficult to estimate into smaller stories you can estimate."
     },
     {
       "id": 72,
       "question": "Explain what triangulation in analogy estimation is, give an example.",
-      "options": [],
+      "options": [
+        "Compare the story with an assortment of stories that have already been estimated. Example: If thinking of estimating a story at 5 points, compare it to a story you estimated at 3 and one you estimated at 8.",
+        "Compare the story with a single previously estimated story. Example: If thinking of estimating a story at 5 points, compare it to a story you estimated at 5.",
+        "Compare the story with future stories that need to be estimated. Example: If thinking of estimating a story at 5 points, compare it to upcoming stories you plan to estimate.",
+        "Compare the story with external benchmarks. Example: If thinking of estimating a story at 5 points, compare it to industry standards for similar features."
+      ],
       "correctAnswer": "Compare the story with an assortment of stories that have already been estimated. Example: If thinking of estimating a story at 5 points, compare it to a story you estimated at 3 and one you estimated at 8."
     },
     {
       "id": 73,
       "question": "Write two reasons of what is the problem with disaggregation of a user story.",
-      "options": [],
+      "options": [
+        "1. Forgotten tasks. 2. Summing many small errors can result in a larger error.",
+        "1. Increased complexity. 2. Difficulty in prioritization.",
+        "1. Resource allocation issues. 2. Communication overhead.",
+        "1. Technical debt accumulation. 2. Quality assurance challenges."
+      ],
       "correctAnswer": "1. Forgotten tasks. 2. Summing many small errors can result in a larger error."
     },
     {
