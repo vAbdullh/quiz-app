@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useQuiz } from "../context/QuizContext";
 import { Button } from "@/components/ui/button";
 import { Check, X } from "lucide-react";
@@ -15,6 +15,25 @@ const QuestionCard: React.FC = () => {
     isCorrect,
     courseTitle
   } = useQuiz();
+  
+  // State to hold the randomized options
+  const [randomizedOptions, setRandomizedOptions] = useState<string[]>([]);
+
+  // Update randomized options when question changes
+  useEffect(() => {
+    if (questions.length === 0) return;
+    
+    const currentQuestion = questions[currentQuestionIndex];
+    // Only randomize if there are options to randomize
+    if (currentQuestion.options.length > 0) {
+      // Create a copy of the options array and shuffle it
+      const shuffled = [...currentQuestion.options].sort(() => Math.random() - 0.5);
+      setRandomizedOptions(shuffled);
+    } else {
+      // If no options (like for open-ended questions), use empty array
+      setRandomizedOptions([]);
+    }
+  }, [questions, currentQuestionIndex]);
 
   if (questions.length === 0) {
     return null;
@@ -50,18 +69,27 @@ const QuestionCard: React.FC = () => {
         </h2>
         
         <div className="space-y-3 mb-6">
-          {currentQuestion.options.map((option, index) => (
-            <button
-              key={index}
-              className={`w-full text-left p-4 rounded-lg border border-gray-700 transition-all duration-300 ${getOptionClass(
-                option
-              )} disabled:cursor-default`}
-              onClick={() => !isChecking && setSelectedOption(option)}
-              disabled={isChecking}
-            >
-              {option}
-            </button>
-          ))}
+          {/* If we have options to display, show the randomized ones */}
+          {randomizedOptions.length > 0 ? (
+            randomizedOptions.map((option, index) => (
+              <button
+                key={index}
+                className={`w-full text-left p-4 rounded-lg border border-gray-700 transition-all duration-300 ${getOptionClass(
+                  option
+                )} disabled:cursor-default`}
+                onClick={() => !isChecking && setSelectedOption(option)}
+                disabled={isChecking}
+              >
+                {option}
+              </button>
+            ))
+          ) : (
+            // For open-ended questions without multiple choice options
+            <div className="text-white">
+              <p className="italic text-gray-400 mb-2">Answer:</p>
+              <p>{currentQuestion.correctAnswer}</p>
+            </div>
+          )}
         </div>
         
         {isChecking && (
@@ -84,7 +112,7 @@ const QuestionCard: React.FC = () => {
           <Button
             className="bg-quiz-primary hover:bg-quiz-secondary text-white font-medium py-2 px-6 rounded-full transition-all"
             onClick={checkAnswer}
-            disabled={!selectedOption || isChecking}
+            disabled={!selectedOption || isChecking || randomizedOptions.length === 0}
           >
             Check Answer
           </Button>
