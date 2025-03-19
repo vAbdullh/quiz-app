@@ -19,7 +19,8 @@ const CourseSelection: React.FC = () => {
     // For now, we'll hardcode the available courses
     setCourses([
       { id: "cpit-251", title: "Software Engineering (CPIT-251)" },
-      { id: "cpit-370", title: "Computer Networks (CPIT-370)" }
+      { id: "cpit-370", title: "Computer Networks (CPIT-370)" },
+      { id: "cpit-330", title: "IT and Management (CPIT-330)" }
     ]);
     setLoading(false);
   }, []);
