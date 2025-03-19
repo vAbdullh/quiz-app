@@ -1,0 +1,17 @@
+
+{
+  "courseTitle": "IT and Management (CPIT-330)",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary goal of IT management?",
+      "options": [
+        "Developing new hardware", 
+        "Aligning IT resources with business objectives", 
+        "Hiring programmers", 
+        "Eliminating all technology"
+      ],
+      "correctAnswer": "Aligning IT resources with business objectives"
+    }
+  ]
+}
